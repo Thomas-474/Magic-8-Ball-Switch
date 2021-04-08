@@ -1,9 +1,12 @@
 function MagicResponse(){
-  var userQuestion = document.getElementById("questionInput").innerHTML;
+  
+  var userQuestion;
+  
+  //document.getElementById("questionInput").innerHTML;
 
-  document.getElementById("questionDislpay").innerHTML = userQuestion;
+  //document.getElementById("questionDislpay").innerHTML;
 
-  var response = document.getElementById("answer").innerHTML;
+  var response = '';
 
   var randomNumber = Math.floor(Math.random() * 10) + 1;
 
@@ -52,4 +55,7 @@ function MagicResponse(){
     response = 'Error!';
     break;
   };
+
+  document.getElementById("answer").innerHTML = response;
+
 };
