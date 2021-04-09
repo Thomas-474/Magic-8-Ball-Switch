@@ -1,10 +1,8 @@
 function MagicResponse(){
   
-  var userQuestion;
-  
-  //document.getElementById("questionInput").innerHTML;
+  var userQuestion = document.getElementById("questionInput").value;
 
-  //document.getElementById("questionDislpay").innerHTML;
+  document.getElementById("questionDislpay").innerHTML = userQuestion;
 
   var response = '';
 
@@ -12,35 +10,35 @@ function MagicResponse(){
 
   switch (randomNumber){
     case 1:
-    response = 'It is certain'
+    response = 'It is<br>certain';
     break;
   
     case 2:
-    response = 'It is decidedly so';
+    response = 'It is<br>decidedly so';
     break;
   
     case 3:
-    response = 'Reply hazy try again';
+    response = 'Reply<br>hazy, try<br>again';
     break;
   
     case 4:
-    response = 'Cannot predict now';
+    response = 'Cannot<br>predict now';
     break;
   
     case 5:
-    response = 'Do not count on it';
+    response = 'Do not<br>count on it';
     break;
   
     case 6:
-    response = 'My sources say no';
+    response = 'My<br>sources<br>say no';
     break;
   
     case 7:
-    response = 'Outlook not so good';
+    response = 'Outlook<br>not so good';
     break;
   
     case 8:
-    response = 'Signs point to yes';
+    response = 'Signs<br>point<br>to yes';
     break;
 
     case 9:
@@ -48,7 +46,7 @@ function MagicResponse(){
     break;
 
     case 10:
-    response = 'Probably not';
+    response = 'Probably<br>not';
     break;
   
     default:
@@ -57,5 +55,4 @@ function MagicResponse(){
   };
 
   document.getElementById("answer").innerHTML = response;
-
 };
